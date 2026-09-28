@@ -1,88 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello World</title>
-    <link rel="stylesheet" href="tampilan.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="bungkus">
-        <div id="top">
-            <div id="logo">
-                <a href="#">
-                    <img src="images/web-development.png">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid p-0">
+                <a href="#" class="navbar-brand">
+                    <img src="images/web-development.png" alt="Logo">
                 </a>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+        </nav>
 
         <div id="banner">
-            <img src="images/banner1.jpg">
+            <img src="images/banner1.jpg" class="img-fluid" alt="Banner">
         </div>
 
-        <div id="highlight">
-            <div class="box">
-                <img src="images/thor.jpg">
+        <div id="highlight" class="row g-3">
+            <div class="col-4">
+                <div class="box">
+                    <img src="images/thor.jpg" alt="Thor">
+                </div>
             </div>
-            <div class="box">
-                <img src="images/wick.jpg">
+            <div class="col-4">
+                <div class="box">
+                    <img src="images/wick.jpg" alt="John Wick">
+                </div>
             </div>
-            <div class="box">
-                <img src="images/ironman.jpg">
+            <div class="col-4">
+                <div class="box">
+                    <img src="images/ironman.jpg" alt="Iron Man">
+                </div>
             </div>
         </div>
 
-        <div id="about">
-            <div class="about-image">
-                <img src="images/banner2.jpg">
+        <div id="about" class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="about-image">
+                    <img src="images/banner2.jpg" class="img-fluid" alt="About">
+                </div>
             </div>
-            <div class="about-text">
-                <h2>Subtitle Here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <div class="col-12 col-md-8">
+                <div class="about-text">
+                    <h2>Subtitle Here</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
             </div>
         </div>
 
         <div id="client">
             <h3>Our Client</h3>
-            <div class="client-list">
-                <img src="images/0.jpg">
-                <img src="images/1.jpg">
-                <img src="images/2.jpg">
-                <img src="images/3.jpg">
-                <img src="images/4.jpg">
-                <img src="images/5.jpg">
+            <div class="client-list row align-items-center g-2">
+                <div class="col-4 col-md-2">
+                    <img src="images/0.jpg" class="img-fluid" alt="Client 1">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="images/1.jpg" class="img-fluid" alt="Client 2">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="images/2.jpg" class="img-fluid" alt="Client 3">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="images/3.jpg" class="img-fluid" alt="Client 4">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="images/4.jpg" class="img-fluid" alt="Client 5">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="images/5.jpg" class="img-fluid" alt="Client 6">
+                </div>
             </div>
         </div>
 
         <div id="testimonial">
             <h3>Testimonials</h3>
-            <div class="testimonial-list">
-                <div class="testimonial-box">
-                    <img src="images/6.jpg">
-                    <h4>John Thor</h4>
-                    <p>Setelah menggunakan jasa perusahaan ini, saya menjadi seorang super hero yang memiliki kekuatan untuk mengendalikan petir. Keren banget kan.</p>
+            <div class="testimonial-list row g-3">
+                <div class="col-md-6">
+                    <div class="testimonial-box">
+                        <img src="images/6.jpg">
+                        <h4>John Thor</h4>
+                        <p>Setelah menggunakan jasa perusahaan ini, saya menjadi seorang super hero yang memiliki kekuatan untuk mengendalikan petir. Keren banget kan.</p>
+                    </div>
                 </div>
-                <div class="testimonial-box">
-                    <img src="images/7.jpg">
-                    <h4>Tony Stark</h4>
-                    <p>Setelah saya kuliah di UMN, saya jadi jenius banget dan bisa bikin Iron Man, saya jadi super hero paling tajir di jagad raya.</p>
+                
+                <div class="col-md-6">
+                    <div class="testimonial-box">
+                        <img src="images/7.jpg">
+                        <h4>Tony Stark</h4>
+                        <p>Setelah saya kuliah di UMN, saya jadi jenius banget dan bisa bikin Iron Man, saya jadi super hero paling tajir di jagar raya.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="newsletter">
-            <h3>Subscribe to our newsletter to get the latest info</h3>
-            <input type="email" placeholder="Enter your email here...">
-
-            <br>
-
-            <button type="submit">Subscribe</button>
+            <h3>Subscribe to our newletter to get the latest info</h3>
+            <input type="email" placeholder="Enter your email here..." class="form-control mx-auto">
+            <button type="submit" class="btn">Subscribe</button>
         </div>
 
         <div id="footer">
@@ -100,13 +149,21 @@
 
             <div class="footer-right">
                 <div class="social">
-                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="images/youtube.png" alt="Youtube"></a>
+                    <a href="#">
+                        <img src="images/facebook.png">
+                    </a>
+                    <a href="#">
+                        <img src="images/instagram.png">
+                    </a>
+                    <a href="#">
+                        <img src="images/youtube.png">
+                    </a>
                 </div>
                 <p>Copyright &copy; 2022 | All rights reserved.</p>
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
